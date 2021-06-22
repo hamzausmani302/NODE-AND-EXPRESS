@@ -3,7 +3,7 @@ var app = express();
 
 let path = __dirname + "/views/index.html";
 let csspath = __dirname + "/public";
-;
+
 
 
 console.log(path);
