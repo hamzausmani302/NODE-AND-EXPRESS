@@ -2,15 +2,13 @@ var express = require('express');
 var app = express();
 
 let path = __dirname + "/views/index.html";
-let csspath = __dirname + "/public";
+let csspath = __dirname + "/public/";
 
 
 
-console.log(path);
+console.log(csspath);
 
-console.log("Hello World");
-
-app.use("/public" ,express.static(csspath) );
+app.use("/public" , express.static(csspath));
 
 
 app.get("/" , (req,res)=>{
@@ -20,6 +18,7 @@ app.get("/" , (req,res)=>{
   
 
 })
+
 
 
 
