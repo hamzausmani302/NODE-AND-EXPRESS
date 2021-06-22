@@ -15,7 +15,7 @@ app.use("/public" ,express.static(csspath) );
 
 app.get("/" , (req,res)=>{
   
-  res.sendfile(path);
+  res.sendFile(path);
   //res.sendFile(path);
   
 
